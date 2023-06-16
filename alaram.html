@@ -9,14 +9,29 @@
 <body>
     <div class="container">
         <img src="clock.svg" alt="clock">
-        <h1>00:00:00 PM</h1>
+        <h1>00:00:00 AM</h1>
         <div class="content">
+            <!-- select hour value  -->
             <div class="column">
                 <select>
-                    
+                    <option value="Hour" selected hidden>Hour</option>
+                </select>
+            </div>
+            <!-- select minute value -->
+            <div class="column">
+                <select>
+                    <option value="Minute" selected hidden>Minute</option>
+                </select>
+            </div>
+            <!-- Select AM/PM value  -->
+            <div class="column">
+                <select>
+                    <option value="AM/PM" selected hidden>AM/PM</option>
                 </select>
             </div>
         </div>
+        <button>Set Alaram</button>
     </div>
+    <script src="alaram.js"></script>
 </body>
 </html>

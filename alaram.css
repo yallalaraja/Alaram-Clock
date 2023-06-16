@@ -1,0 +1,82 @@
+    /* Adding a font style to our web page */
+*{
+    margin :0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+    /* Getting the elements to the center */
+body, .container ,.content{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+    /* Setting viewport height to 100 */
+body{
+    min-height: 100vh;
+    background-color: rgb(151, 35, 228);
+}
+    /* our container is having width of 450px */
+.container{
+    width:450px;
+    background-color: white;
+    border-radius: 15px;
+    /* Arranging the all elements in column direction using flex */
+    flex-direction: column;
+    padding: 30px 30px 38px;
+}
+
+.container img{
+    max-width: 103px;;
+}
+
+.container h1{
+    font-size: 38px;
+    font-weight:100;
+    margin:30px 0;
+}
+    /* space between elements of content elements in container */
+.container .content{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content .column{
+    border-radius: 5px;
+    padding :0 5px;
+    border: 1px solid #999;
+    padding:0 10px;
+    width: calc(100% / 3 - 5px);
+}
+
+.column select{
+    outline: none;
+    border:none;
+    height:53px;
+    width: 100%;
+    font-size: 19px;
+}
+
+.container button{
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    font-size:20px;
+    padding :17px 0;
+    border-radius: 5px;
+    background: rgb(251, 177, 38);
+}
+
+.container button:hover{
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    font-size:20px;
+    padding :17px 0;
+    border-radius: 5px;
+    background: rgb(77, 243, 12);
+}
+
