@@ -15,7 +15,7 @@ body, .container ,.content{
     /* Setting viewport height to 100 */
 body{
     min-height: 100vh;
-    background-color: rgb(151, 35, 228);
+    background-color: rgb(126, 8, 245);
 }
     /* our container is having width of 450px */
 .container{
@@ -77,6 +77,10 @@ body{
     font-size:20px;
     padding :17px 0;
     border-radius: 5px;
-    background: rgb(77, 243, 12);
+    background: rgb(31, 238, 20);
 }
+
+.content.disable{
+    cursor: no-drop;
+  }
 
