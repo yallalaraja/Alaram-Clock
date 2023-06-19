@@ -24,7 +24,7 @@
   /* our container is having width of 450px */
   .container {
     width: 450px;
-    background-color: white;
+    background-color: rgb(206, 244, 15);
     border-radius: 15px;
     /* Arranging the all elements in column direction using flex */
     flex-direction: column;
@@ -73,7 +73,7 @@
   .content .column {
     border-radius: 5px;
     padding: 0 5px;
-    border: 1px solid #999;
+    border: none;
     padding: 0 10px;
     width: calc(100% / 3 - 5px);
     animation: fadeIn 1s ease-out forwards;
@@ -133,10 +133,10 @@
   
   @keyframes rotateClock {
     from {
-      transform: rotate(10deg);
+      transform: rotate(13deg);
     }
     to {
-      transform: rotate(-10deg);
+      transform: rotate(-13deg);
     }
   }
   
