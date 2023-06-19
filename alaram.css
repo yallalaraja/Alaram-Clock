@@ -102,15 +102,17 @@
     padding: 17px 0;
     border-radius: 5px;
     background: rgb(251, 177, 38);
-    animation: fadeIn 1s ease-out forwards;
+    animation: fadeIn 1s ease-in forwards;
     transition: background-color 0.3s ease;
   }
   
+  /* When mouse points over the button then it will do some animation */
   .container button:hover {
     background-color: rgb(31, 238, 20);
     animation: pulse 0.5s infinite alternate;
   }
   
+  /* For every 0.5 sec our button is increasing and decreasing size */
   @keyframes pulse {
     from {
       transform: scale(1);
@@ -122,5 +124,19 @@
   
   .content.disable {
     cursor: no-drop;
+  }
+  
+  /* Animation for rotating the clock image */
+  .container img {
+    animation: rotateClock 1s linear infinite alternate;
+  }
+  
+  @keyframes rotateClock {
+    from {
+      transform: rotate(10deg);
+    }
+    to {
+      transform: rotate(-10deg);
+    }
   }
   
