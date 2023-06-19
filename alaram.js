@@ -25,11 +25,15 @@ for (let i = 2; i > 0; i--) {
 }
 
 setInterval(() => {
+
+    //get hours,mins and secs
     let date = new Date(),
     h = date.getHours(),
     m = date.getMinutes(),
     s = date.getSeconds(),
     time = "AM";
+
+    // to get the 12 hour format we use the below code 
     if(h >= 12) {
         h = h - 12;
         time = "PM";
@@ -40,6 +44,7 @@ setInterval(() => {
     s = s < 10 ? "0" + s : s;
     currentTime.innerText = `${h}:${m}:${s} ${time}`;
 
+    // if alarmTime reaches the time that you set then alaram will rang 
     if (alarmTime === `${h}:${m} ${time}`) {
         ringtone.play();
         ringtone.loop = true;
